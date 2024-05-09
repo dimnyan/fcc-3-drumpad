@@ -5,7 +5,7 @@ export const powerSlice = createSlice({
   initialState: {
     value: true,
     volume: "50",
-    clicked: " ",
+    clicked: "Click Pad to Start!",
   },
   reducers: {
     setPower: (state, action) => {

@@ -149,14 +149,20 @@ function App() {
           <p>Power</p>
           <div
             className="outer-box"
-            style={{ justifyContent: power ? "start" : "end" }}
+            style={{
+              justifyContent: power ? "start" : "end",
+            }}
             onClick={handlePower}
           >
-            <div className="selector-box"></div>
+            <div
+              className="selector-box"
+              style={{ backgroundColor: power ? "rgb(71, 206, 71)" : "red" }}
+            ></div>
           </div>
         </div>
         <p id="display">{display(clicked)}</p>
         <div id="volume-slider">
+          <p>Volume</p>
           <input type="range" min="0" max="100" onChange={changeVolume} />
         </div>
         {/* <div className="control">
